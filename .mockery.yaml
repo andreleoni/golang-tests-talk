@@ -1,0 +1,12 @@
+with-expecter: true
+mockname: "{{.InterfaceName}}"
+filename: "{{.MockName}}.go"
+outpkg: mocks
+dir: mocks
+packages:
+  golang-tests-talk:
+    config:
+      all: true
+  golang-tests-talk/internal/request/contracts:
+    config:
+      all: true
